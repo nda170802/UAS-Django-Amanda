@@ -1,0 +1,12 @@
+<td>
+    <a href="{% url 'mahasiswa:edit_mahasiswa' mahasiswa.id %}" 
+       class="btn btn-warning btn-sm">
+        <i class="fas fa-edit"></i> Edit
+    </a>
+
+    <a href="{% url 'mahasiswa:delete_mahasiswa' mahasiswa.id %}" 
+       class="btn btn-danger btn-sm"
+       onclick="return confirm('Are you sure you want to delete this item?')">
+        <i class="fas fa-trash"></i> Delete
+    </a>
+</td>
